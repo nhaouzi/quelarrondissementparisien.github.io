@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--
+	Interphase by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="fr">
+
+
+<!-- PARTIE HEAD -->
+	<head>
+		<!-- <meta charset="iso-8859-1"> -->
+			<!-- <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" /> -->
+				<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+
+		<title>Quel arrondissement est fait pour toi ?</title>
+		
+	<meta name="description" content="Indicateurs nutritionnels des produits de la grande distribution" />
+	<meta name="keywords" content="arrondissementdeParisestfaitpourtoi,parisien" />
+        
+        <link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-xlarge.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.css">
+        <link rel="stylesheet" href="css/eUGsj.all.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  
+        <!--[if lte IE 8]>
+		<script src="css/ie/html5shiv.js"></script><![endif]-->
+        
+	<!--[if lt IE 9]>
+        	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        	<script src="js/json2.min.js"></script>
+        	<script type="text/javascript">
+            window.__ltie9 = true; </script>
+        <![endif]-->
+        
+	<script src="js/jquery.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-layers.min.js"></script>
+	<script src="js/init.js"></script>
+        <script src="js/json2.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/npm.js"></script>
+                
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.15/d3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+        <script src="js/bar-chart-1a3f0242ee9d13cef39ccd24a306b422.min.js"></script>
+        <script src="js/chart-753c771b6f0ebc215cab76b0fca5e03aab20b743.min.js"></script>
+        <script src="js/default-5baee189e1a2f0bf680f4910cc958098.min.js"></script>
+        
+        <script src="js/scripts.js"></script>
+		<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-75276315-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	
+	</head>
+
+    
+	<body class="landing">
+    
+	<!-- Header -->
+			<header id="header">
+				<!--h1><a href="#description">Description</a></h1-->
+				<nav id="nav">                   
+					<ul >
+						<li><a href="index.html">Faire le test</a></li>       
+						<li><a href="sources.html">Les arrondissements parisiens</a></li>
+						<li><a href="about.html">En savoir plus</a></li>
+                        
+					</ul>
+				</nav>
+			</header>
+
+		<section id="bannerSmall">
+			<h2>Découvre comment nos résultats ont été construits</h2>
+		</section>		
+
+	<!-- Main -->
+			<section id="main" class="wrapper style3 align-center">
+				<div class="container">
+					<header >
+						<h2>Méthodologie</h2>
+				    </header>
+				    <h4> Dans chaque question, une variable est associée à chaque réponse possible. Cette variable correspond au nombre de commerce au km<sup>2</sup> dans l'arrondissement associé à la réponse choisie. Ainsi, pour chaque question, nous attribuons un score à chaque arrondissement selon le nombre de commerce au km<sup>2</sup> dans l'arrondissement. </h4>
+
+				    <h4>Pas encore très clair ? Prenons un exemple : ton régime alimentaire se constitue essentiellement de poisson. Tu as donc choisi la réponse "Fish-addict". Ainsi, nous avons associé à chaque arrondissement un score égale au nombre de poissonneries au km<sup>2</sup> dans l'arrondissement. </h4>
+	            		</div>
+                        </section>
+
+	<!-- Tab contents -->                
+                    		<div class="tab-content">
+                        
+                        	<!-- One -->
+                        		<div role="tabpanel" class="tab-pane active" id="one">
+			            		<section id="one" class="wrapper style3 align-center">
+                            				<div class="container">
+                            					<header >
+													<h2>Les bases de données utilisées</h2>
+											    </header>
+				                                
+                               					<div align="justify">
+
+									<p>Ces statistiques ont été obtenues à partir des bases de donnnées suivantes : 
+										<ul style="list-style-type:circle">
+										  <li><a class="lien_source" href="https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/">Sirene</a> </li>
+										  <li><a class="lien_source" href="https://data.iledefrance.fr/explore/dataset/ensemble-des-equipements-sportifs-dile-de-france/table/">Les équipements sportifs d'Ile-de-France</a></li>
+										  <li><a class="lien_source" href="https://opendata.paris.fr/explore/dataset/parcsetjardinsparis2010/">Les espaces verts à Paris</a></li>
+										  <li><a class="lien_source" href="https://opendata.paris.fr/explore/dataset/etalages-et-terrasses/">Les étalages et terrasses à Paris</a></li>
+										  <li><a class="lien_source" href="https://opendata.paris.fr/explore/dataset/zones-de-circulation-apaisee-a-paris/">Les zones de circulation apaisée à Paris</a></li>
+										  <li><a class="lien_source" href="https://opendata.paris.fr/explore/dataset/cinemas-a-paris/">Les salles de cinémas à Paris</a></li>
+										</ul>
+									
+
+									
+
+									 </p>
+								</div>
+	
+							</div>
+						</section>                            
+		                        </div>
+                		<div> 
+		
+
+
+	<!-- Pied de page -->
+			<footer id="footer">
+			<div class="container">
+				<div class="row">
+				<section class="5u 6u$(medium) 12u$(small)">
+                            		<ul class="tabular">
+						<h3>QUI SOMMES-NOUS ?</h3>
+                            				<h4>Etudiants en dernière année de l'ENSAE ParisTech, nous avons réalisé cette page web dans le cadre du cours de dataviz.</h4>                           
+                            			<h3><a href="sources.html">SOURCES</a></h3>  
+                            			<h3><a href="about.html">METHODOLOGIE</a></h3>  
+					</ul>
+				</section>
+				
+				<section class="5u$ 12u$(medium) 12u$(small)">
+					<h3>NOUS CONTACTER</h3>
+					<ul class="tabular">
+					<li> <h3><a href="mailto:quelarrondissementparisien@gmail.com" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+							<h4><a href="mailto:quelarrondissementparisien@gmail.com">quelarrondissementparisien@gmail.com</a></h4> </li>
+									<li> <h3><a href="http://www.linkedin.com/in/fabien-agnus-b39b226b" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
+                                			<h4><a href="http://www.linkedin.com/in/fabien-agnus-b39b226b">Fabien Agnus</a></h4> </li>
+                                	<li><h3><a href="julie.djiriguian@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+                                			<h4><a href="adresse perso gmail">Julie Djiriguan</a></h4> </li>
+                                	<li> <h3><a href="http://www.linkedin.com/in/noémie-haouzi-317347131" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
+                                			<h4><a href="http://www.linkedin.com/in/noémie-haouzi-317347131">Noémie Haouzi</a></h4> </li>
+									<li> <h3><a href="http://linkedin.com/in/eva-hoyau-77250762" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
+                                			<h4><a href="http://linkedin.com/in/eva-hoyau-77250762">Eva Hoyau</a></h4> </li>
+									<li><h3><a href="gaetan.polard@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+                                			<h4><a href="adresse perso gmail">Gaetan Polard</a></h4> </li>
+					</ul>
+				</section>
+				</div>
+
+				<!--<ul class="copyright">
+					<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+                        		<li>Icons:  <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> </li>
+                     		</ul>-->
+			</div>
+			</footer>
+
+	</body>
+</html>

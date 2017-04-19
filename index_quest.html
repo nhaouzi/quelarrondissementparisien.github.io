@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--
+	Interphase by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="fr">
+
+
+<!-- PARTIE HEAD -->
+	<head>
+		<!-- <meta charset="UTF-8"> -->
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+		<title>Quel arrondissement est fait pour toi ?</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Indicateurs nutritionnels des produits de la grande distribution" />
+	<!-- Relativement obsolète -->
+	<meta name="keywords" content="arrondissementdeParisestfaitpourtoi,parisien" />
+        
+
+        <link rel="stylesheet" href="css/skel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-xlarge.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.css">
+        <link rel="stylesheet" href="css/eUGsj.all.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  
+        <!--[if lte IE 8]>
+		<script src="css/ie/html5shiv.js"></script><![endif]-->
+        
+	<!--[if lt IE 9]>
+        	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        	<script src="js/json2.min.js"></script>
+        	<script type="text/javascript">
+            window.__ltie9 = true; </script>
+        <![endif]-->
+        
+	<script src="js/jquery.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-layers.min.js"></script>
+	<script src="js/init.js"></script>
+        <script src="js/json2.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/npm.js"></script>
+                
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.15/d3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+        <script src="js/bar-chart-1a3f0242ee9d13cef39ccd24a306b422.min.js"></script>
+        <script src="js/chart-753c771b6f0ebc215cab76b0fca5e03aab20b743.min.js"></script>
+        <script src="js/default-5baee189e1a2f0bf680f4910cc958098.min.js"></script>
+        
+        <script src="js/scripts.js"></script>
+		<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-75276315-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	
+
+<!--test-->
+<bold><script language="javascript">
+function calcul()
+{
+   nombreDeQuestion=10;
+   nom=new Array();
+   nomLength=new Array();
+   point=0;
+   for(n=0;n<=(nombreDeQuestion-1);n++)
+   {
+      nom[n]=document.getElementsByName("choix_rep_"+n);
+      nomLength[n]=nom[n].length;
+      for(q=0;q<=(nomLength[n]-1);q++)
+      {
+        if(nom[n][q].checked==true)
+        {point=point+eval(nom[n][q].value);} 
+        else
+        {point=point;}
+
+      }       
+   }
+   document.form_qz.txtNb.value=point;
+}
+</script></bold>
+<!--fin test-->
+
+	</head>
+
+
+
+
+<!-- PARTIE BODY -->
+	<body class="landing">
+
+	<!-- En-tête : les boutons en haut à droite -->
+			<header id="header">
+				<h1><a href="#description">Description</a></h1>
+				<nav id="nav">                   
+					<ul >
+						<li><a href="index.html">Accueil</a></li>       
+						<li><a href="sources.html">Sources</a></li>
+						<li><a href="about.html">Méthodologie </a></li>
+                        
+					</ul>
+				</nav>
+			</header>
+
+	<!-- Banner : 1er affichage de la page -->
+			<section id="banner">
+				<h2>Quel arrondissement parisien est fait pour toi ?</h2>
+				<ul class="actions">
+					<li>
+						<a href="#quiz" class="button big">Faites le test</a>
+					</li>
+				</ul>
+			</section>
+
+	
+
+        <!-- QUIZ-->
+
+		<section id="quiz" class="wrapper style3 align-center">
+			<header> <h2>Dis nous qui tu es, nous te dirons où tu devrais vivre !</h2> </header>
+		
+	<!-- Début questionnaire-->
+		<div id="questionnaire">
+
+		<!-- Question 1 -->
+			<class id="q1">
+			<ul id="questions" data-test="135" data-selects-colors="1" class="show" style="width: 600%; transform: translateX(0%);">
+
+				<li class="question" style="width: 16.66%;">
+				<h2><span style="font-size: 32px; line-height: 39px;">A quoi ressemble le plus ton régime alimentaire &nbsp;?</span></h2>
+
+					<ul class="choices choices-4 choices-images with-text p2" data-type="n" data-order="1">
+						<li class="c1" style="max-height: none; display:inline-block;float:left;">
+						<button data-choice="1215" data-src-bg="images/pic01.jpg" class="loaded" style="background-image: url(&quot;images/pic01.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(1,1)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">T-rex</span><!--
+						--></button>
+						</li>
+				
+
+						<li class="c4" style="max-height: none;display:inline-block;float:left;">
+						<button data-choice="1216" data-src-bg="images/pic02.jpg" class="loaded" style="background-image: url(&quot;images/pic02.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(1,2)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Vegan</span><!--
+						--></button>
+						</li>
+	
+						<li class="c2" style="max-height: none;display:inline-block;float:left;">
+						<button data-choice="1217" data-src-bg="images/pic03.jpg" class="loaded" style="background-image: url(&quot;images/pic03.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(1,3)"><!--
+						--><span style="font-size: 39px; line-height: 47px;">Fast-food</span><!--
+						--></button>
+						</li>
+								
+						<li class="c6" style="max-height: none;display:inline-block;">
+						<button data-choice="1218" data-src-bg="images/pic04.jpg" class="loaded" style="background-image: url(&quot;images/pic04.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(1,4)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Du sucre, c'est tout</span><!--
+						--></button>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</class>
+
+		<!-- Question 2 -->
+			<class id="q2">
+			<ul id="questions" data-test="135" data-selects-colors="1" class="show" style="width: 600%; transform: translateX(0%);">
+
+				<li class="question" style="width: 16.66%;">
+				<h2><span style="font-size: 32px; line-height: 39px;">Quel sportif es-tu &nbsp;?</span></h2>
+
+					<ul class="choices choices-4 choices-images with-text p2" data-type="n" data-order="1">
+						<li class="c1" style="max-height: none; display:inline-block;float:left;">
+						<button data-choice="1215" data-src-bg="images/pic01.jpg" class="loaded" style="background-image: url(&quot;images/pic01.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(2,1)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Schwarzy</span><!--
+						--></button>
+						</li>
+				
+
+						<li class="c4" style="max-height: none;display:inline-block;float:left;">
+						<button data-choice="1216" data-src-bg="images/pic02.jpg" class="loaded" style="background-image: url(&quot;images/pic02.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(2,2)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Foot</span><!--
+						--></button>
+						</li>
+	
+						<li class="c2" style="max-height: none;display:inline-block;float:left;">
+						<button data-choice="1217" data-src-bg="images/pic03.jpg" class="loaded" style="background-image: url(&quot;images/pic03.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(2,3)"><!--
+						--><span style="font-size: 39px; line-height: 47px;">Tennis</span><!--
+						--></button>
+						</li>
+								
+						<li class="c6" style="max-height: none;display:inline-block;">
+						<button data-choice="1218" data-src-bg="images/pic04.jpg" class="loaded" style="background-image: url(&quot;images/pic04.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(2,4)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Pétanque</span><!--
+						--></button>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</class>
+	
+
+		<!-- Question 3 -->		
+			<class id="q3">
+			<ul id="questions" data-test="135" data-selects-colors="1" class="show" style="width: 600%; transform: translateX(0%);">
+
+				<li class="question" style="width: 16.66%;">
+				<h2><span style="font-size: 32px; line-height: 39px;">Tes après-midis &nbsp;?</span></h2>
+
+					<ul class="choices choices-4 choices-images with-text p2" data-type="n" data-order="1">
+						<li class="c1" style="max-height: none; display:inline-block;float:left;">
+						<button data-choice="1215" data-src-bg="images/pic01.jpg" class="loaded" style="background-image: url(&quot;images/pic01.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(3,1)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Posé dans un parc</span><!--
+						--></button>
+						</li>
+				
+
+						<li class="c4" style="max-height: none;display:inline-block;float:left;">
+						<button data-choice="1216" data-src-bg="images/pic02.jpg" class="loaded" style="background-image: url(&quot;images/pic02.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(3,2)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Au musée</span><!--
+						--></button>
+						</li>
+	
+						<li class="c2" style="max-height: none;display:inline-block;float:left;">
+						<button data-choice="1217" data-src-bg="images/pic03.jpg" class="loaded" style="background-image: url(&quot;images/pic03.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(3,3)"><!--
+						--><span style="font-size: 39px; line-height: 47px;">A la bibliothèque</span><!--
+						--></button>
+						</li>
+								
+						<li class="c6" style="max-height: none;display:inline-block;">
+						<button data-choice="1218" data-src-bg="images/pic04.jpg" class="loaded" style="background-image: url(&quot;images/pic04.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(3,4)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">En terrasse</span><!--
+						--></button>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</class>
+
+		<!-- Question 4 -->
+			<class id="q4">
+			<ul id="questions" data-test="135" data-selects-colors="1" class="show" style="width: 600%; transform: translateX(0%);">
+
+				<li class="question" style="width: 16.66%;">
+				<h2><span style="font-size: 32px; line-height: 39px;">Tes soirées &nbsp;?</span></h2>
+
+					<ul class="choices choices-4 choices-images with-text p2" data-type="n" data-order="1">
+						<li class="c1" style="max-height: none; display:inline-block;float:left;">
+						<button data-choice="1215" data-src-bg="images/pic01.jpg" class="loaded" style="background-image: url(&quot;images/pic01.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(4,1)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Au cinéma</span><!--
+						--></button>
+						</li>
+				
+
+						<li class="c4" style="max-height: none;display:inline-block;float:left;">
+						<button data-choice="1216" data-src-bg="images/pic02.jpg" class="loaded" style="background-image: url(&quot;images/pic02.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(4,2)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Dans un bar</span><!--
+						--></button>
+						</li>
+	
+						<li class="c2" style="max-height: none;display:inline-block;float:left;">
+						<button data-choice="1217" data-src-bg="images/pic03.jpg" class="loaded" style="background-image: url(&quot;images/pic03.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(4,3)"><!--
+						--><span style="font-size: 39px; line-height: 47px;">Au spectacle</span><!--
+						--></button>
+						</li>
+								
+						<li class="c6" style="max-height: none;display:inline-block;">
+						<button data-choice="1218" data-src-bg="images/pic04.jpg" class="loaded" style="background-image: url(&quot;images/pic04.jpg&quot;);width:300px;height:200px;" onclick="answerQuestion(4,4)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Au restaurant</span><!--
+						--></button>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</class>
+
+		<!-- Question 5 -->
+			<class id="q5">
+			<ul id="questions" data-test="135" data-selects-colors="1" class="show" style="width: 600%; transform: translateX(0%);">
+
+				<li class="question" style="width: 16.66%;">
+				<h2><span style="font-size: 32px; line-height: 39px;">Tu ne sors jamais sans &nbsp;?</span></h2>
+
+					<ul class="choices choices-4 choices-images with-text p2" data-type="n" data-order="1">
+						<li class="c1" style="max-height: none; display:inline-block;float:left;">
+						<button data-choice="1215" data-src-bg="images/pic01.jpg" class="loaded" style="background-image: url(&quot;images/pic01.jpg&quot;);width:300px;height:200px;" onclick="affichageReponse(5,1)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Une poussette</span><!--
+						--></button>
+						</li>
+				
+						<li class="c4" style="max-height: none;display:inline-block;float:left;">
+						<button data-choice="1216" data-src-bg="images/pic02.jpg" class="loaded" style="background-image: url(&quot;images/pic02.jpg&quot;);width:300px;height:200px;" onclick="affichageReponse(5,2)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Ta bouteille</span><!--
+						--></button>
+						</li>
+	
+						<li class="c2" style="max-height: none;display:inline-block;float:left;">
+						<button data-choice="1217" data-src-bg="images/pic03.jpg" class="loaded" style="background-image: url(&quot;images/pic03.jpg&quot;);width:300px;height:200px;" onclick="affichageReponse(5,3)"><!--
+						--><span style="font-size: 39px; line-height: 47px;">Ton journal</span><!--
+						--></button>
+						</li>
+								
+						<li class="c6" style="max-height: none;display:inline-block;">
+						<button data-choice="1218" data-src-bg="images/pic04.jpg" class="loaded" style="background-image: url(&quot;images/pic04.jpg&quot;);width:300px;height:200px;" onclick="affichageReponse(5,4)"><!--
+						--><span style="font-size: 36px; line-height: 44px;">Etre sur ton 31</span><!--
+						--></button>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</class>
+
+
+
+		</div>
+		</section>
+
+
+
+	<!-- Fin questionnaire-->
+
+
+	<!-- Résultat du quiz-->
+			<section id="reponse" class="wrapper style2 align-center">
+				<div class="container">
+					<h2>Dis nous qui tu es, nous te dirons où tu dois vivre !</h2>
+					<div class="row">
+        					<div class="col-lg-2"></div>
+						<div class="col-lg-4"><img class="imagecenter" src="images/coupe.jpg" height="200px" width="200px" alt="" /></div>
+        					<div class="col-lg-4"><h3 id="selectArrondissement"> </h3></div>
+        					<div>
+        					<iframe width="800" height="450" src="https://embed.chartblocks.com/1.0/?c=58c819949973d2cd77399d3d&t=96dc137639bf55d" frameBorder="0"></iframe>
+        					</div>
+        						</script>	
+						<div class="col-lg-2"></div>
+					</div>
+				</div>
+			</section>
+			
+
+
+	<!-- Description-->
+			<section id="description" class="wrapper style1 align-center">
+				<div class="container">
+					<!-- Faire différentes colonnes avec clic bouton -->
+					<div class="row 200%">						
+						<section class="4u 12u$(small)">
+							<a href="#compare" <i class="icon big rounded fa-bar-chart"></i></a>
+							<p>Comparer les arrondissements</p>
+						</section>
+
+						<section class="4u 12u$(small)">
+							<a href="#profil" <i class="icon big rounded fa-bar-chart"></i></a>
+							<p>Profil des arrondissements</p>
+						</section>
+
+						<section class="4u$ 12u$(small)">
+							<a href="#FunFacts" <i class="icon big rounded fa-smile-o"></i></a>
+							<p>Découvrez les fun facts de chaque arrondissement</p>
+						</section>
+					</div>
+				</div>
+			</section>
+
+	
+
+
+	<!-- Comparaison des arrondissements -->
+	<!-- Profil des arrondissements -->	
+	<!-- Fun Facts des arrondissements -->
+
+
+	<!-- Mettre un retour en haut de la page -->
+	<a href="#" class="back-to-top" style="display: block;">Back to Top</a>
+
+	<!-- Pied de page -->
+			<footer id="footer">
+			<div class="container">
+				<div class="row">
+				<section class="5u 6u$(medium) 12u$(small)">
+                            		<ul class="tabular">
+						<h3>QUI SOMMES-NOUS ?</h3>
+                            				<h4>Etudiants en dernière année de l'ENSAE ParisTech, nous avons réalisé cette page web dans le cadre du cours de dataviz.</h4>                           
+                            			<h3><a href="sources.html">SOURCES</a></h3>  
+                            			<h3><a href="about.html">METHODOLOGIE</a></h3>  
+					</ul>
+				</section>
+				
+				<section class="5u$ 12u$(medium) 12u$(small)">
+					<h3>NOUS CONTACTER</h3>
+					<ul class="tabular">
+					<li> <h3>Mail</h3>
+							<h4><a href="mailto:ourteamvision@gmail.com">ourteamvision@gmail.com</a></h4> </li>
+                                	<li> <h3><a href="adresse perso linkedin" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
+                                			<h4><a href="adresse perso linkedin">Nom Prénom</a></h4> </li>
+					<li><h3><a href="adresse perso gmail" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
+                                			<h4><a href="adresse perso gmail">Nom2 Prénom2</a></h4> </li>
+					</ul>
+				</section>
+				</div>
+
+				<ul class="copyright">
+					<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+                        		<li>Icons:  <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> </li>
+                     		</ul>
+			</div>
+			</footer>
+
+
+	<!-- JavaScript -->
+	<script language="javascript">
+		var result=[];
+		document.querySelector('#q1').style.display='block';
+		document.querySelector('#q2').style.display='none';
+		document.querySelector('#q3').style.display='none';
+		document.querySelector('#q4').style.display='none';
+		document.querySelector('#q5').style.display='none';
+		document.querySelector('#reponse').style.display='none';
+		function answerQuestion(nQ,answer){
+			result[nQ-1]=answer;
+			var qSuiv=nQ+1;
+			//document.getElementById("q1").innerHTML = result;
+			document.querySelector('#q'+nQ).style.display='none';
+			document.querySelector('#q'+qSuiv).style.display='block';
+		}
+		function affichageReponse(nQ,answer){
+			result[nQ-1]=answer;
+			function getMaxOfArray(numArray) {
+  				return Math.max.apply(null, numArray);
+			}
+			var maxResult = getMaxOfArray(result);
+			document.querySelector('#quiz').style.display='none';
+			document.querySelector('#reponse').style.display='block';
+			document.getElementById("selectArrondissement").innerHTML = 'Pour briller en société, vis dans le '+ maxResult +'ème';
+			$('#selectArrondissement').css('font-weight', 'bold');
+		}
+	
+	</script>
+
+
+	</body>
+</html>
