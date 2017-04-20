@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--
 	Interphase by TEMPLATED
 	templated.co @templatedco
@@ -100,7 +100,7 @@
 				<h2>Quel arrondissement parisien est fait pour toi ?</h2>
 				<ul class="actions">
 					<li>
-						<a href="#quiz" class="button big">Faire le test</a>
+						<a href="#quiz" class="button big" onclick="return demarrer()">Faire le test</a>
 					</li>
 				</ul>
 
@@ -1056,6 +1056,17 @@ height:200px;">
 		document.getElementById("myCheckbox").addEventListener("click", function(event){
     			event.preventDefault()
 		});
+
+		function demarrer(){
+			result=[];
+			document.querySelector('#q1').style.display='block';
+			document.querySelector('#q2').style.display='none';
+			document.querySelector('#q3').style.display='none';
+			document.querySelector('#q4').style.display='none';
+			document.querySelector('#q5').style.display='none';
+			document.querySelector('#reponse').style.display='none';
+			document.querySelector('#comparaisonArrondissements').style.display='none';
+		}
 		function answerQuestion(nQ,answer){
 
 			result[nQ-1]=answer;
@@ -5633,7 +5644,7 @@ document.getElementById("label_5_20").style.fontWeight = font_5_20;
 			document.getElementById("texte_graphique5").innerHTML = texte_graph5;
 			document.getElementById("titre_graphique5").innerHTML = titre_graph5;
 
-				return false;
+
 
 		}
 	</script>
