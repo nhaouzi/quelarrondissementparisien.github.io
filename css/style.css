@@ -1639,7 +1639,7 @@ div.carres .photos a {
 	}
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
 
 	div.carres .photos div {
 		display: block;
@@ -1648,6 +1648,9 @@ div.carres .photos a {
 	}
 	div.carres .photos a {
 		width: 300px;
+	}
+	.nav-pills > li {
+		float: none;
 	}
 }
 a.lien_source{
@@ -1660,7 +1663,6 @@ a.lien_source:hover{
 .contact{
 	
 }
-
 
 .col-img a {
 	-webkit-transform: scale(1);
