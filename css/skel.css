@@ -13,16 +13,16 @@
 /* Container */
 
 	body {
-		/* min-width: (containers) */
-		min-width: 1200px;
+		 min-width: (containers) ;
+		/*min-width: 1200px;*/
 	}
 
 	.container {
 		margin-left: auto;
 		margin-right: auto;
 
-		/* width: (containers) */
-		width: 1200px;
+		 width: (containers) ;
+		/*width: 1200px;*/
 	}
 
 	/* Modifiers */
@@ -31,34 +31,34 @@
 			.container.\31 25\25 {
 				width: 100%;
 
-				/* max-width: (containers * 1.25) */
-				max-width: 1500px;
+				 max-width: (containers * 1.25) ;
+				/*max-width: 1500px;*/
 
-				/* min-width: (containers) */
-				min-width: 1200px;
+				 min-width: (containers)
+				/*min-width: 1200px;*/
 			}
 
 		/* 75% */
 			.container.\37 5\25 {
 
-				/* width: (containers * 0.75) */
-				width: 900px;
+				 width: (containers * 0.75)
+				/*width: 900px;*/
 
 			}
 
 		/* 50% */
 			.container.\35 0\25 {
 
-				/* width: (containers * 0.50) */
-				width: 600px;
+				 width: (containers * 0.50)
+				/*width: 600px;*/
 
 			}
 
 		/* 25% */
 			.container.\32 5\25 {
 
-				/* width: (containers * 0.25) */
-				width: 300px;
+				 width: (containers * 0.25)
+				/*width: 300px;*/
 
 			}
 
