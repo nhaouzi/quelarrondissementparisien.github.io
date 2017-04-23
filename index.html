@@ -1007,38 +1007,44 @@ height:200px;">
 			<footer id="footer">
 			<div class="container">
 				<div class="row">
+				<!--<div class="col-lg-6 align-left">-->
 				<section class="5u 6u$(medium) 12u$(small)">
                             		<ul class="tabular">
 						<h3>QUI SOMMES-NOUS ?</h3>
                             				<h4>Etudiants en dernière année de l'ENSAE ParisTech, nous avons réalisé cette page web dans le cadre du cours de dataviz.</h4>                           
-                            			<h3><a href="sources.html">LES CLASSEMENTS</a></h3>  
-                            			<h3><a href="about.html">METHODOLOGIE</a></h3>  
+                            			<h3><a href="sources.html">EXPLORER PARIS</a></h3>  
+                            			<h3><a href="about.html">EN SAVOIR PLUS</a></h3>  
 					</ul>
 				</section>
+				<!--</div>-->
 				
 								<section class="5u$ 12u$(medium) 12u$(small)">
 					<h3>NOUS CONTACTER</h3>
 					<ul class="tabular">
+					<!--<div class="col-lg-3 align-left">-->
 					<li> <h3><a href="mailto:quelarrondissementparisien@gmail.com" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
 							<h4><a href="mailto:quelarrondissementparisien@gmail.com">quelarrondissementparisien@gmail.com</a></h4> </li>
 									<li> <h3><a href="http://www.linkedin.com/in/fabien-agnus-b39b226b" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
                                 			<h4><a href="http://www.linkedin.com/in/fabien-agnus-b39b226b">Fabien Agnus</a></h4> </li>
                                 	<li><h3><a href="julie.djiriguian@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
                                 			<h4><a href="adresse perso gmail">Julie Djiriguan</a></h4> </li>
+                     <!--</div>-->
+                     <!--<div class="col-lg-3 align-left">-->
                                 	<li> <h3><a href="http://www.linkedin.com/in/noémie-haouzi-317347131" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
                                 			<h4><a href="http://www.linkedin.com/in/noémie-haouzi-317347131">Noémie Haouzi</a></h4> </li>
 									<li> <h3><a href="http://linkedin.com/in/eva-hoyau-77250762" class="icon rounded fa-linkedin"><span class="label">LinkedInRD</span></a> </h3>
                                 			<h4><a href="http://linkedin.com/in/eva-hoyau-77250762">Eva Hoyau</a></h4> </li>
 									<li><h3><a href="gaetan.polard@ensae-paristech.fr" class="icon rounded fa-google-plus"><span class="label"></span></a></h3>
                                 			<h4><a href="adresse perso gmail">Gaetan Polard</a></h4> </li>
+                     <!--</div>-->
 					</ul>
 				</section>
 				</div>
 
-				<!--<ul class="copyright">
+				<ul class="copyright">
 					<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
                         		<li>Icons:  <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> </li>
-                     		</ul>-->
+                     		</ul>
 			</div>
 			</footer>
 
@@ -5611,8 +5617,8 @@ document.getElementById("label_5_20").style.fontWeight = font_5_20;
 
 
 
-
-			var exposant = 'ème';
+			if (arrondissement == 1) var exposant = 'er';
+			else var exposant = 'ème';
 			document.getElementById("selectArrondissement").innerHTML = arrondissement+exposant.sup();
 			$('#selectArrondissement').css('font-weight', 'bold');
 
