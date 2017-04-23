@@ -1625,6 +1625,30 @@ div.carres .photos a {
 	color:white;
 	text-decoration:none;
 }
+
+@media screen and (max-width: 800px) {
+
+	div.carres .photos div {
+		display: block;
+		max-width:200px;
+		width: 100%;
+	}
+	div.carres .photos a {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+	div.carres .photos div {
+		display: block;
+		max-width:300px;
+		width: 100%;
+	}
+	div.carres .photos a {
+		width: 300px;
+	}
+}
 a.lien_source{
 	color:black;
 	text-decoration: none;
