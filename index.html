@@ -1056,7 +1056,6 @@ height:200px;">
 		document.getElementById("myCheckbox").addEventListener("click", function(event){
     			event.preventDefault()
 		});
-
 		function demarrer(){
 			result=[];
 			document.querySelector('#q1').style.display='block';
@@ -1066,6 +1065,10 @@ height:200px;">
 			document.querySelector('#q5').style.display='none';
 			document.querySelector('#reponse').style.display='none';
 			document.querySelector('#comparaisonArrondissements').style.display='none';
+			document.getElementById("myCheckbox").addEventListener("click", function(event){
+    				event.preventDefault()
+			});
+			return false;
 		}
 		function answerQuestion(nQ,answer){
 
@@ -5643,10 +5646,12 @@ document.getElementById("label_5_20").style.fontWeight = font_5_20;
 
 			document.getElementById("texte_graphique5").innerHTML = texte_graph5;
 			document.getElementById("titre_graphique5").innerHTML = titre_graph5;
-
-
+			
+			return false;
+		
 
 		}
+
 	</script>
 
 
