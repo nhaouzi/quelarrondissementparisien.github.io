@@ -1389,17 +1389,18 @@ body.landing #header {
 	color: white;
 	text-align: center;
 	width: 100%;
-	font-family: Georgia;
+	font-family: Arial;
 	line-height: 1;
-	padding-top: 10px;
-	font-size: 10px;
+	padding-top: 5px;
+	font-size: 12px;
 }
 
 #map .rank{
 	color: #ccc;
 	text-align: center;
 	width: 100%;
-	font-size: 18px;
+	font-size: 19px;
+	font-weight: bold;
 }
 
 #map path:hover{
@@ -1479,16 +1480,14 @@ svg { height: 100%; width: 100%; }
 /* SIDEBAR */
 
 #sidebar{
-	width: 220px;
-	top: 100px;
-	left: 20px;
-	position: absolute;
+	width: 100%;
 	z-index: 500;
 }
 
 #sidebar .item{
 	height: 50px;
-	margin: 10px 0 0 0;
+	display: inline-block;
+	margin: 0 15px 0 0;
 }
 
 #sidebar .item h4{
@@ -1497,6 +1496,7 @@ svg { height: 100%; width: 100%; }
 
 #sidebar .item h5{
 	padding: 15px 0 0 0;
+	margin-left: 5px;
 }
 
 #sidebar .item a, #sidebar .item a:active, #sidebar .item a:link{
@@ -1506,15 +1506,18 @@ svg { height: 100%; width: 100%; }
 	background-color: #D1CEC4;
 	transition: all 0.4s ease;
         border: none;
+
 }
 
-
+.col-lg-10 {
+	clear: both;
+}
 .mozilla #sidebar .item a{
         line-height: 60px;
 }
 
 #sidebar .item a:hover{
-	margin-right: 20px;
+	/*margin-right: 20px;*/
 }
 
 .margin-20{
