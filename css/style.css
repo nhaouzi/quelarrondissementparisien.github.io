@@ -1500,6 +1500,9 @@ svg { height: 100%; width: 100%; }
 	padding: 15px 0 0 0;
 	margin-left: 5px;
 }
+#sidebar > div.pull-left {
+	width: 100%;
+}
 
 #sidebar .item a, #sidebar .item a:active, #sidebar .item a:link{
 	width: 50px;
