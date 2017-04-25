@@ -1724,4 +1724,23 @@ header.major{
 h3.sceptique{
 	padding-top: 10%;
 }
-
+.tooltip strong{ 
+color: black;
+font-weight: bold;
+font-size: 26px;
+}
+.tooltip{
+	color:black;
+	background-color: #fad390;
+	line-height: 35px;
+	border-radius: 10px;
+	font-size: 20px;
+	z-index: 900000000000;
+	opacity: 1;
+	position: relative;
+	top:-50px;
+	text-indent: 10px;
+	text-align: center;
+    width: 80%;
+    margin: auto;
+}
