@@ -320,175 +320,181 @@
  
 		<class id="Cartes">
 
+			
 		<div id="map">
-		<svg height="705" version="1.1" width="980" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; left: -0.078125px; margin-bottom:12%;" viewBox="0 0 980 705" preserveAspectRatio="none">
+		<svg height="705" version="1.1" width="980" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; left: -0.078125px; margin-bottom:12%;" viewBox="0 0 980 705" preserveAspectRatio="none" onload="init(evt)">
 			<desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></desc>
-<defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
+			<defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
 
-			<path fill="#fff1cb" stroke="#f4f4f4" d="M269,335L341,425L362,425L380,434L403,430L470,384L496,350L417,303L313,300L286,316Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;"  id="C7"></path>
 
-			<path fill="#fff1cb" stroke="#f4f4f4" d="M281,204L314,289L421,293L448,254L458,143L414,161L363,159L349,169L329,169Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C8"></path>
+			<path fill="#fff1cb" stroke="#f4f4f4" d="M269,335L341,425L362,425L380,434L403,430L470,384L496,350L417,303L313,300L286,316Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;"  id="C7" 
+			onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffc932" stroke="#f4f4f4" d="M403,430L503,484L544,375L537,365L496,350L470,384Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C6"></path>
+			<path fill="#fff1cb" stroke="#f4f4f4" d="M281,204L314,289L421,293L448,254L458,143L414,161L363,159L349,169L329,169Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C8" 
+			onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffd665" stroke="#f4f4f4" d="M503,484L585,528L636,487L653,452L636,434L563,395L544,375Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C5"></path>
+			<path fill="#ffc932" stroke="#f4f4f4" d="M403,430L503,484L544,375L537,365L496,350L470,384Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C6" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffd665" stroke="#f4f4f4" d="M562,352L578,309L674,389L657,440L639,420L624,394L597,369Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C4"></path>
+			<path fill="#ffd665" stroke="#f4f4f4" d="M503,484L585,528L636,487L653,452L636,434L563,395L544,375Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C5" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffc932" stroke="#f4f4f4" d="M421,293L503,339L538,355L562,352L578,309L456,253L448,254Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C1"></path>
+			<path fill="#ffd665" stroke="#f4f4f4" d="M562,352L578,309L674,389L657,440L639,420L624,394L597,369Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C4" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffbc00" stroke="#f4f4f4" d="M456,253L494,243L554,243L595,257L578,309Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C2"></path>
+			<path fill="#ffc932" stroke="#f4f4f4" d="M421,293L503,339L538,355L562,352L578,309L456,253L448,254Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C1" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffbc00" stroke="#f4f4f4" d="M595,257L653,276L674,389L578,309Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C3"></path>
+			<path fill="#ffbc00" stroke="#f4f4f4" d="M456,253L494,243L554,243L595,257L578,309Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C2" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffbc00" stroke="#f4f4f4" d="M653,276L722,251L730,253L769,308L777,341L809,367L837,440L710,409L674,389Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C11"></path>
+			<path fill="#ffbc00" stroke="#f4f4f4" d="M595,257L653,276L674,389L578,309Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C3" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffe498" stroke="#f4f4f4" d="M837,440L909,456L924,430L914,409L908,220L888,200L853,208L793,207L730,253L769,308L777,341L809,367Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C20"></path>
+			<path fill="#ffbc00" stroke="#f4f4f4" d="M653,276L722,251L730,253L769,308L777,341L809,367L837,440L710,409L674,389Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C11" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#fff1cb" stroke="#f4f4f4" d="M888,200L853,208L793,207L730,253L722,251L686,198L691,161L663,132L704,69L689,8L754,8L830,60L828,136L842,164Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C19"></path>
+			<path fill="#ffe498" stroke="#f4f4f4" d="M837,440L909,456L924,430L914,409L908,220L888,200L853,208L793,207L730,253L769,308L777,341L809,367Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C20" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffd665" stroke="#f4f4f4" d="M472,8L446,99L458,143L483,134L528,151L569,140L578,145L581,135L663,132L704,69L689,8Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C18"></path>
+			<path fill="#fff1cb" stroke="#f4f4f4" d="M888,200L853,208L793,207L730,253L722,251L686,198L691,161L663,132L704,69L689,8L754,8L830,60L828,136L842,164Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C19" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffd665" stroke="#f4f4f4" d="M448,254L456,253L494,243L554,243L567,248L578,145L569,140L528,151L483,134L458,143Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C9"></path>
+			<path fill="#ffd665" stroke="#f4f4f4" d="M472,8L446,99L458,143L483,134L528,151L569,140L578,145L581,135L663,132L704,69L689,8Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C18" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffd665" stroke="#f4f4f4" d="M567,248L653,276L722,251L686,198L691,161L663,132L581,135L578,145Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C10"></path>
+			<path fill="#ffd665" stroke="#f4f4f4" d="M448,254L456,253L494,243L554,243L567,248L578,145L569,140L528,151L483,134L458,143Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C9" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#fff1cb" stroke="#f4f4f4" d="M536,502L528,611L546,681L573,668L620,692L754,627L761,603L772,598L756,581L696,499L653,452L636,487L585,528Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C13"></path>
+			<path fill="#ffd665" stroke="#f4f4f4" d="M567,248L653,276L722,251L686,198L691,161L663,132L581,135L578,145Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C10" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffe498" stroke="#f4f4f4" d="M313,602L367,531L445,453L536,502L528,611L546,681L541,683Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C14"></path>
+			<path fill="#fff1cb" stroke="#f4f4f4" d="M536,502L528,611L546,681L573,668L620,692L754,627L761,603L772,598L756,581L696,499L653,452L636,487L585,528Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C13" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#fff1cb" stroke="#f4f4f4" d="M313,602L293,602L286,585L167,526L121,520L196,423L226,383L269,335L341,425L362,425L380,434L404,431L445,453L367,531Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C15"></path>
+			<path fill="#ffe498" stroke="#f4f4f4" d="M313,602L367,531L445,453L536,502L528,611L546,681L541,683Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C14" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#fff1cb" stroke="#f4f4f4" d="M109,518L101,516L81,509L73,491L58,480L52,458L62,435L73,431L196,179L281,204L314,289L309,289L281,307L207,390Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C16"></path>
+			<path fill="#fff1cb" stroke="#f4f4f4" d="M313,602L293,602L286,585L167,526L121,520L196,423L226,383L269,335L341,425L362,425L380,434L404,431L445,453L367,531Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C15" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffe498" stroke="#f4f4f4" d="M196,179L208,173L266,102L348,45L425,8L472,8L446,99L458,143L414,161L363,159L349,169L329,169L281,204Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C17"></path>
+			<path fill="#fff1cb" stroke="#f4f4f4" d="M109,518L101,516L81,509L73,491L58,480L52,458L62,435L73,431L196,179L281,204L314,289L309,289L281,307L207,390Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C16" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
-			<path fill="#ffd665" stroke="#f4f4f4" d="M657,440L674,389L710,409L837,440L908,456L913,493L881,546L785,595L764,575L707,494Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C12"></path>
+			<path fill="#ffe498" stroke="#f4f4f4" d="M196,179L208,173L266,102L348,45L425,8L472,8L446,99L458,143L414,161L363,159L349,169L329,169L281,204Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C17" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
+
+			<path fill="#ffd665" stroke="#f4f4f4" d="M657,440L674,389L710,409L837,440L908,456L913,493L881,546L785,595L764,575L707,494Z" stroke-width="1" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round; cursor: pointer;" id="C12" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()"></path>
 
 		</svg>
 	     	
-		<div class="item" id="a-1">
-	    		<div class="img-circle">
-	    			<div class="district">1<sup>er</sup></div>
-	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A1"></div>
+		<div class="item" id="a-1" >
+	    		<div class="img-circle" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">
+	    			<div class="district" >1<sup>er</sup></div>
+	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A1" ></div>
 	    		</div>
 	    	</div>
-	    	<div class="item" id="a-2">
+	    	<div class="item" id="a-2" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">
 	    		<div class="img-circle">
-	    			<div class="district">2<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">2<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A2"></div>
 		    	</div>
 		    </div>
 		<div class="item" id="a-3">
 	    		<div class="img-circle">
-	    			<div class="district">3<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">3<sup>e</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A3"></div>
 		    	</div>
 		</div>
 	    	<div class="item" id="a-4">
 	    		<div class="img-circle">
-	    			<div class="district">4<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">4<sup>e</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A4"></div>
 	    		</div>
 	    	</div>
 	    	<div class="item" id="a-5">
 	    		<div class="img-circle">
-	    			<div class="district">5<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">5<sup>e</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A5"></div>
 	    		</div>
 	    	</div>
 	    	<div class="item" id="a-6">
 	    		<div class="img-circle">
-	    			<div class="district">6<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">6<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A6"></div>
 		    	</div>
 	    	</div>
-	    	<div class="item" id="a-7">
-	    		<div class="img-circle">
-	    			<div class="district">7<sup>e</sup></div>
+	    	<div class="item" id="a-7" >
+	    		<div class="img-circle" >
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">7<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A7"></div>
 		    	</div>
 		</div>
 		<div class="item" id="a-8">
 	    		<div class="img-circle">
-	    			<div class="district">8<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">8<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A8"></div>
 		    	</div>
 		</div>
 	    	<div class="item" id="a-9">
 	    		<div class="img-circle">
-	    			<div class="district">9<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">9<sup>e</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A9"></div>
 	    		</div>
 		</div>
 	    	<div class="item" id="a-10">
 	    		<div class="img-circle">
-	    			<div class="district">10<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">10<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A10"></div>
 	    		</div>
 	    	</div>
 	    	<div class="item" id="a-11">
 	    		<div class="img-circle">
-	    			<div class="district">11<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">11<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A11"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-12">
 	    		<div class="img-circle">
-	    			<div class="district">12<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">12<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A12"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-13">
 	    		<div class="img-circle">
-	    			<div class="district">13<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">13<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A13"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-14">
 	    		<div class="img-circle">
-	    			<div class="district">14<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">14<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A14"></div>
 		    	</div>
 		</div>
 	    	<div class="item" id="a-15">
 	    		<div class="img-circle">
-	    			<div class="district">15<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">15<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A15"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-16">
 	    		<div class="img-circle">
-	    			<div class="district">16<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">16<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A16"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-17">
 	    		<div class="img-circle">
-	    			<div class="district">17<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">17<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A17"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-18">
 	    		<div class="img-circle">
-	    			<div class="district">18<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">18<sup>e</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A18"></div>
 	    		</div>
 	    	</div>
 	    	<div class="item" id="a-19">
 	    		<div class="img-circle">
-	    			<div class="district">19<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">19<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A19"></div>
 		    	</div>
 	    	</div>
 	    	<div class="item" id="a-20">
 	    		<div class="img-circle">
-	    			<div class="district">20<sup>e</sup></div>
+	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">20<sup>e</sup></div>
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A20"></div>
 		    	</div>
 	    	</div>
 	</div>
 
+
+			<div class="tooltip" id="tooltip" x="0" y="0" visibility="hidden"></div>
 
 		</class>
 	</div>
@@ -620,6 +626,8 @@ $('#C20').css('fill', '#550000');
 		var affichPrecMod=1;
 
 		function affichageCarteParQuestion(answer){
+
+currentQuestion = answer;
 			document.querySelector('#modalite'+affichPrec+affichPrecMod).style.background="#D1CEC4";
 			document.querySelector('#sidebar'+affichPrec).style.display='none';
 			document.querySelector('#sidebar'+answer).style.display='block';
@@ -866,8 +874,13 @@ break;
 
 
 		}
+
+		var currentQuestion = 1;
+		var currentModalite = 1;
 		function affichageCarteParQuestionModalite(numQuestion, numModalite){
 
+currentQuestion = numQuestion;
+currentModalite  = numModalite; 
 document.querySelector('#modalite'+numQuestion+'1').style.background="#D1CEC4";
 		document.querySelector('#modalite'+affichPrec+affichPrecMod).style.background="#D1CEC4";
 		affichPrec=numQuestion;
@@ -1776,6 +1789,109 @@ return false;
 			
 		}
 
+var variableCarte = [
+	['boucheries-charcuteries au km2',
+	'poissonneries au km2',
+	'fast-food au km2',
+	'boulangeries-patisseries au km2'
+	],
+	[
+	'salles de culturisme au km2',
+	'terrains de football au km2',
+	'courts de tennis au km2',
+	'terrains de pétanque au km2'
+	],
+	[
+	"% d'espaces verts",
+	"musées au km2",
+	"bibliothèques au km2",
+	"terrasses au km2"
+	],
+	[
+	"zones 30",
+	"débits de boissons au km2",
+	"fauteuils de cinéma et de spectacle au km<sup>2</sup>",
+	"restaurants traditionnels au km2"
+	],
+	[
+	"établissements pré-primaires et primaires au km2",
+	"commerces de boissons au km2",
+	"activités de santé au km2",
+	"magasins d'habillement au km2"
+	]
+];
+
+var resultCarte = [
+    [
+        [5, 10, 3, 7, 7, 6, 4, 3, 13, 26, 14, 8, 7, 7, 8, 6, 11, 17, 10, 14],
+        [1, 2, 3, 1, 2, 3, 1, 1, 2, 4, 2, 2, 1, 1, 2, 2, 2, 3, 1, 1],
+        [128, 369, 187, 96, 135, 101, 29, 122, 283, 242, 171, 58, 52, 57, 54, 41, 94, 108, 62, 73],
+        [9, 19, 12, 16, 8, 15, 6, 7, 15, 8, 5, 5, 2, 4, 4, 4, 6, 4, 4, 4]
+    ],
+    [
+        [0, 0, 0, 0, 0.39, 0, 0, 0, 0.92, 0, 0.82, 0.47, 0.14, 0, 0.12, 0.38, 0.18, 0, 0, 0.17],
+        [0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 3, 3, 2, 2, 6, 1, 1, 1, 2],
+        [0, 0, 0, 0, 0.39, 1.86, 0.24, 0, 0, 0.35, 0.54, 2.51, 2.8, 1.77, 2.48, 5.69, 1.23, 0.83, 1.03, 1.84],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0.46, 0.36, 1.36, 0.78, 0.28, 0.18, 0.94, 0.13, 0.18, 0.17, 0.15, 0.67]
+    ],
+    [
+        [0.03, 0, 0.02, 0.04, 0.04, 0.01, 0.09, 0.07, 0.01, 0.02, 0.03, 0.08, 0.05, 0.06, 0.08, 0.28, 0.04, 0.04, 0.07, 0.06],
+        [4, 1, 13, 8, 0, 5, 1, 4, 4, 4, 5, 3, 1, 2, 2, 2, 1, 4, 2, 2],
+        [4, 9, 3, 8, 6, 7, 2, 2, 4, 4, 2, 2, 3, 2, 2, 1, 2, 2, 2, 3],
+        [0.0047, 0.0029, 0.0026, 0.0034, 0.0031, 0.0025, 0.001, 0.0025, 0.0027, 0.0025, 0.002, 0.0006, 0.001, 0.0013, 0.0011, 0.0005, 0.0016, 0.001, 0.0009, 0.0009]
+    ],
+    [
+        [8, 0, 0, 4, 9, 0, 0, 0, 7, 7, 3, 1, 9, 7, 0, 3, 7, 0, 6, 22],
+        [42, 82, 39, 53, 36, 38, 10, 22, 68, 56, 63, 13, 11, 11, 10, 6, 21, 34, 13, 20],
+        [3, 6, 23, 9, 27, 31, 2, 9, 13, 17, 14, 3, 4, 9, 4, 2, 6, 8, 4, 6],
+        [338, 582, 344, 281, 305, 257, 98, 206, 444, 334, 314, 101, 88, 102, 112, 75, 170, 183, 83, 101]
+    ],
+    [
+        [3, 9, 12, 11, 11, 7, 6, 5, 11, 13, 15, 9, 10, 9, 9, 7, 11, 14, 14, 15],
+        [10, 24, 21, 16, 14, 13, 9, 17, 19, 16, 17, 6, 5, 7, 7, 8, 13, 9, 4, 5],
+        [251, 438, 516, 369, 446, 455, 303, 442, 564, 401, 566, 308, 315, 373, 362, 387, 434, 249, 210, 273],
+        [95, 60, 90, 68, 12, 82, 17, 47, 66, 24, 21, 6, 5, 10, 12, 14, 20, 14, 7, 9]
+    ]
+];
+
+function afficherTexte(evt){
+
+	var id = evt.target.id.replace("C", "");
+	var nombreVariable=resultCarte[currentQuestion-1][currentModalite-1];
+	var texteVariable=variableCarte[currentQuestion-1][currentModalite-1];
+	var txt = 'Paris ' + id + '<sup>e</sup> <br> <strong>' + nombreVariable[id-1] + '</strong> ' + texteVariable.replace('km2', "km<sup>2</sup>") ;
+	document.getElementById('tooltip').innerHTML = txt;
+	
+}
+ 
+			
+function init(evt)
+{
+if ( window.svgDocument == null )
+{
+  svgDocument = evt.target.ownerDocument;
+}
+tooltip = svgDocument.getElementById('tooltip');
+}
+			  function ShowTooltip(evt)
+			{
+			 
+				afficherTexte(evt);
+			  tooltip.setAttributeNS(null,"x","0%");
+			  tooltip.setAttributeNS(null,"y","95%");
+			  tooltip.setAttributeNS(null,"visibility","visible");
+			  
+			}
+
+			function HideTooltip()
+			{
+			  tooltip.setAttributeNS(null,"visibility","hidden");
+			}
+			
+
+
+
+
 
 
 	</script>
@@ -1784,3 +1900,14 @@ return false;
 
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
