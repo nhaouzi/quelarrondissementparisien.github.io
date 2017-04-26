@@ -371,7 +371,7 @@
 
 		</svg>
 	     	
-		<div class="item" id="a-1" >
+		<div class="item" id="a-1"  onload="init(evt)">
 	    		<div class="img-circle" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">
 	    			<div class="district" >1<sup>er</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A1" ></div>
@@ -383,13 +383,13 @@
 		    		<div class="rank" style="color: rgb(255, 188, 0);" id="A2"></div>
 		    	</div>
 		    </div>
-		<div class="item" id="a-3">
+		<div class="item" id="a-3" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">
 	    		<div class="img-circle">
 	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">3<sup>e</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A3"></div>
 		    	</div>
 		</div>
-	    	<div class="item" id="a-4">
+	    	<div class="item" id="a-4" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">
 	    		<div class="img-circle">
 	    			<div class="district" onmousemove="ShowTooltip(evt)" onmouseout="HideTooltip()">4<sup>e</sup></div>
 	    			<div class="rank" style="color: rgb(255, 188, 0);" id="A4"></div>
@@ -1835,7 +1835,7 @@ var resultCarte = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0.46, 0.36, 1.36, 0.78, 0.28, 0.18, 0.94, 0.13, 0.18, 0.17, 0.15, 0.67]
     ],
     [
-        [0.03, 0, 0.02, 0.04, 0.04, 0.01, 0.09, 0.07, 0.01, 0.02, 0.03, 0.08, 0.05, 0.06, 0.08, 0.28, 0.04, 0.04, 0.07, 0.06],
+        [3, 0, 2, 4, 4, 1, 9, 7, 1, 2, 3, 8, 5, 6, 8, 28, 4, 4, 7, 6],
         [4, 1, 13, 8, 0, 5, 1, 4, 4, 4, 5, 3, 1, 2, 2, 2, 1, 4, 2, 2],
         [4, 9, 3, 8, 6, 7, 2, 2, 4, 4, 2, 2, 3, 2, 2, 1, 2, 2, 2, 3],
         [0.0047, 0.0029, 0.0026, 0.0034, 0.0031, 0.0025, 0.001, 0.0025, 0.0027, 0.0025, 0.002, 0.0006, 0.001, 0.0013, 0.0011, 0.0005, 0.0016, 0.001, 0.0009, 0.0009]
@@ -1854,27 +1854,25 @@ var resultCarte = [
     ]
 ];
 
-function afficherTexte(evt){
+			function afficherTexte(evt){
 
-	var id = evt.target.id.replace("C", "");
-	var nombreVariable=resultCarte[currentQuestion-1][currentModalite-1];
-	var texteVariable=variableCarte[currentQuestion-1][currentModalite-1];
-	var txt = 'Paris ' + id + '<sup>e</sup> <br> <strong>' + nombreVariable[id-1] + '</strong> ' + texteVariable.replace('km2', "km<sup>2</sup>") ;
-	document.getElementById('tooltip').innerHTML = txt;
-	
-}
- 
-			
-function init(evt)
-{
-if ( window.svgDocument == null )
-{
-  svgDocument = evt.target.ownerDocument;
-}
-tooltip = svgDocument.getElementById('tooltip');
-}
-			  function ShowTooltip(evt)
-			{
+				var id = evt.target.id.replace("C", "");
+				var nombreVariable=resultCarte[currentQuestion-1][currentModalite-1];
+				var texteVariable=variableCarte[currentQuestion-1][currentModalite-1];
+				var txt = 'Paris ' + id + '<sup>e</sup> <br> <strong>' + nombreVariable[id-1] + '</strong> ' + texteVariable.replace('km2', "km<sup>2</sup>") ;
+				document.getElementById('tooltip').innerHTML = txt;
+				
+			}
+			 
+						
+			function init(evt){
+				if ( window.svgDocument == null ){
+			  		svgDocument = evt.target.ownerDocument;
+				}
+				tooltip = svgDocument.getElementById('tooltip');
+			}
+
+			 function ShowTooltip(evt){
 			 
 				afficherTexte(evt);
 			  tooltip.setAttributeNS(null,"x","0%");
@@ -1883,8 +1881,7 @@ tooltip = svgDocument.getElementById('tooltip');
 			  
 			}
 
-			function HideTooltip()
-			{
+			function HideTooltip(){
 			  tooltip.setAttributeNS(null,"visibility","hidden");
 			}
 			
